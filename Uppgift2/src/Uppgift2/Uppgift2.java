@@ -13,20 +13,16 @@ public class Uppgift2 {
 				talet=false;
 		}else if (tal1!=0) {
 			System.out.print("Skriv ditt andra tal: ");
-			}int tal2=sc.nextInt();
+		}	int tal2=sc.nextInt();
 			if (tal1>tal2) {
 				System.out.println(tal1+" är större än "+tal2);
 		}	else if (tal1<tal2) {
 				System.out.println(tal2+" är större än "+tal1);
-		}	else if (tal1==tal2)
+		}	else 
 				System.out.println("Talen är lika stora");
 			}
 		
-			System.out.println("Slut");
-		
-					
-		
-		
+			System.out.println("Slut");			
 	}
 
 }

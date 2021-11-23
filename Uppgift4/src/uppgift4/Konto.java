@@ -3,7 +3,6 @@ package uppgift4;
 public class Konto {
 	private String nbr;
 	private double balance;
-	private double amount;
 	
 	
 	public void setNbr(String nbr) {
@@ -18,23 +17,12 @@ public class Konto {
 	public double getBalance() {
 		return this.balance;
 	}
-	public void setAmount(double amount) {
-		this.amount=amount;
+	public void credit(double amount) {
+		this.balance=this.getBalance()+amount;	
 	}
-	public double getAmount() {
-		return this.amount;
-	}
-	
-	public void credit(double amount) {//newBalance
-		this.balance=this.balance+amount;	
-	}
-	
-	
-	
 	public void withdraw(double amount) {
-		this.balance=this.balance-this.getAmount();
+		this.balance=this.getBalance()-amount;
 	}
-	
 
 
 	}
