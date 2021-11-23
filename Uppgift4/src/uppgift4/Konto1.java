@@ -11,7 +11,7 @@ public class Konto1 {
 		while (avslut.equals("n")) {
 			System.out.println("Insättning(0) eller Uttag(1)?");
 			int svar=sc.nextInt();
-			System.out.println("Ange belopp");
+			System.out.println("Ange belopp ");
 			int belopp=sc.nextInt();
 			if (svar==0) {
 				a.credit(belopp);
@@ -19,17 +19,20 @@ public class Konto1 {
 			else {
 				a.withdraw(belopp);
 			}
-			System.out.println(a.getBalance());
-			System.out.println("Vill du avsluta?");
+			System.out.println("Saldo "+a.getBalance());
+			System.out.println("Vill du avsluta? j/n");
 			avslut=sc.next();
 			
 		}
 		if (avslut.equals("j")) {
-			System.out.println(a.getBalance());
+			System.out.println("Saldo "+a.getBalance());
 		}
 		else {
 			System.out.println("Fel input");
+			System.out.println("Vill du avsluta? j/n");
+			avslut=sc.next();
+			
 		}
+		sc.close();
 	}
-
 }

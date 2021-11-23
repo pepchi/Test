@@ -25,10 +25,6 @@ public class Bankkonto {
 			a.withdraw(belopp);
 			System.out.println("Saldo: "+a.getBalance());
 		}
-		
-
-		
-			
 		boolean nej = true;
 		while (nej) {
 			System.out.println("Vill du avsluta? J/N? ");

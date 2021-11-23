@@ -22,7 +22,7 @@ public class Konto {
 	}
 	public void withdraw(double amount) {
 		if (this.balance<amount) {
-			System.out.println("Inga pengar");
+			System.out.println("Inte tillräckligt med pengar");
 		}
 		else {
 		this.balance=this.getBalance()-amount;
