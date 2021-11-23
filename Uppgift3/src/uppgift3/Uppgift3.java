@@ -1,6 +1,5 @@
 package uppgift3;
 import java.util.*;
-import java.io.*;
 public class Uppgift3 {
 
 	public static void main(String[] args) {
@@ -24,4 +23,4 @@ public class Uppgift3 {
         System.out.println("Högsta siffran är "+highest);
         }
     }
-	
+

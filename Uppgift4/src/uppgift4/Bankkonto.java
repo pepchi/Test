@@ -10,23 +10,24 @@ public class Bankkonto {
 		System.out.println("Saldo "+a.getBalance());
 		System.out.println("Kund "+a.getNbr());
 		
-			System.out.print("Insättning(0)eller Uttag(1)? ");
-			int svar1=sc.nextInt();
-			if (svar1==0) {
-				System.out.print("Ange belopp ");
-				double belopp=sc.nextDouble();
-				a.credit(belopp);
-				System.out.println("Saldo: "+a.getBalance());
-				
-			}
-			else if (svar1==1) {
-				System.out.print("Ange belopp ");
-				double belopp=sc.nextDouble();
-				a.withdraw(belopp);
-				System.out.println("Saldo: "+a.getBalance());
-			}
+		System.out.print("Insättning(0)eller Uttag(1)? ");
+		int svar1=sc.nextInt();
+		if (svar1==0) {
+			System.out.print("Ange belopp ");
+			double belopp=sc.nextDouble();
+			a.credit(belopp);
+			System.out.println("Saldo: "+a.getBalance());
 			
+		}
+		else if (svar1==1) {
+			System.out.print("Ange belopp ");
+			double belopp=sc.nextDouble();
+			a.withdraw(belopp);
+			System.out.println("Saldo: "+a.getBalance());
+		}
+		
 
+		
 			
 		boolean nej = true;
 		while (nej) {
