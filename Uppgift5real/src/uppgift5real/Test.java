@@ -60,7 +60,7 @@ public class Test {
 		a5.setBalance(5376);
 		p3.addAccount(a5);
 
-		System.out.printg("Personregistret innehåller följande personer:");
+		System.out.print("Personregistret innehåller följande personer:");
 		for (Person p : reg.getPersons()) {//Skriv ut alla personer och deras info från listan
 			System.out.println("\n"+"Namn: " + p.getName() + "\n" + "Personnummer: " + p.getpNbr() + "\n" + "Antal konton: "
 					+ p.getAccounts().size() + "\n" + "Saldo: " + p.totBalance());
