@@ -1,4 +1,4 @@
-package uppgift5real;
+package application;
 
 import java.util.ArrayList;
 
@@ -47,5 +47,12 @@ public class PersonReg {
 		Person p = findPerson(pNbr);
 		return p.totBalance();
 	}
+	public void setPersonName(String pNbr, String newName) {
+
+		Person c = this.findPerson(pNbr);
+		if (c != null) {
+		c.setName(newName);
+		}
+		}
 
 }// klass

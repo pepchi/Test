@@ -1,4 +1,4 @@
-package uppgift5real;
+package application;
 
 public class Account {
 	private String nbr;
@@ -30,6 +30,10 @@ public class Account {
 		} else {
 			this.balance = this.getBalance() - amount;
 		}
+	}
+	public Account(String nbr, double balance) {
+		this.setNbr(nbr);
+		this.setBalance(balance);
 	}
 
 }

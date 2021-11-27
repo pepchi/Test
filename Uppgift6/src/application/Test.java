@@ -1,4 +1,4 @@
-package uppgift5real;
+package application;
 
 public class Test {
 

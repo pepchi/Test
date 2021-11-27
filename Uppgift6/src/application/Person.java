@@ -1,4 +1,4 @@
-package uppgift5real;
+package application;
 
 import java.util.ArrayList;
 
@@ -50,6 +50,10 @@ public class Person {
 			sum += e.getBalance();
 		}
 		return sum;
+	}
+	public Person(String pnbr, String nName) {
+		this.setpNbr(pNbr);
+		this.setName(name);
 	}
 
 }
